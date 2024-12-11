@@ -2,8 +2,7 @@ import tornado.ioloop
 import tornado.web
 import tornado.websocket
 import asyncio
-import redis.asyncio as redis  # Используем redis.asyncio вместо aioredis
-
+import redis.asyncio as redis 
 REDIS_CHANNEL = "chat_room"
 
 class MainHandler(tornado.web.RequestHandler):
